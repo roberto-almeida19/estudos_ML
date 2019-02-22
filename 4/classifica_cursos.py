@@ -1,9 +1,9 @@
 
 from estudos_ML.tratador import leitor
-X,Y = leitor.carregar_arquivo()
+X,Y = leitor.carregar_arquivo('cursos2')
 
 import pandas as pd
-dataFrame = pd.read_csv('cursos.csv')
+dataFrame = pd.read_csv('cursos2.csv')
 X_df = dataFrame[['home', 'busca', 'logado']]
 Y_df = dataFrame['comprou']
 Xdummies_df = pd.get_dummies(X_df)
